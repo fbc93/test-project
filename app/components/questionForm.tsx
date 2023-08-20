@@ -482,6 +482,9 @@ export default function QuestionForm() {
   const onError = (error: any) => {
     const errorState = Object.values(errors);
     console.log(errorState)
+
+    //alert
+    alert("빠진 문항이 있습니다. 모든 문항을 체크해주세요.");
   }
 
   return (
