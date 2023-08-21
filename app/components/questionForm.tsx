@@ -473,11 +473,10 @@ export default function QuestionForm() {
 
         setStateB(type2_sum);
       }
-
-      //이동
-      router.push(`/result/final_score?type1_sum=${type1_sum}&type2_sum=${type2_sum}`);
-
     }
+
+    //이동
+    router.push(`/result/final_score?type1_sum=${type1_sum}&type2_sum=${type2_sum}`);
   }
 
   const onError = (error: any) => {
