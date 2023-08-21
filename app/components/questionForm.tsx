@@ -475,7 +475,8 @@ export default function QuestionForm() {
       }
 
       //이동
-      router.push('/result');
+      router.push(`/result/final_score?type1_sum=${type1_sum}&type2_sum=${type2_sum}`);
+
     }
   }
 
