@@ -5,8 +5,8 @@ import QuestionItem from "./questionItem";
 
 export default function QuestionForm() {
   const { handleSubmit, formState: { errors } } = useFormContext();
-  const [stateA, setStateA] = useState(0);
-  const [stateB, setStateB] = useState(0);
+  // const [stateA, setStateA] = useState(0);
+  // const [stateB, setStateB] = useState(0);
 
   const router = useRouter();
 
@@ -464,14 +464,14 @@ export default function QuestionForm() {
         let score = parseInt(data[prop]);
         type1_sum += score;
 
-        setStateA(type1_sum);
+        // setStateA(type1_sum);
       }
 
       if (String(prop).startsWith('think')) {
         let score = parseInt(data[prop]);
         type2_sum += score;
 
-        setStateB(type2_sum);
+        // setStateB(type2_sum);
       }
     }
 
@@ -502,7 +502,7 @@ export default function QuestionForm() {
       {/* Submit */}
       <button type="submit">제출하기</button>
 
-      <h1>{`Feel : ${stateA}점 / Think :  ${stateB}점`}</h1>
+      {/* <h1>{`Feel : ${stateA}점 / Think :  ${stateB}점`}</h1> */}
     </form>
   )
 }
